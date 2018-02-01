@@ -6,13 +6,21 @@ class Recipe extends Component {
     const {title, img, instructions} = this.props;
     const ingredients = this.props.ingredients.map((ing, index) => (<li key={index}>{ing}</li>))
     return (
-      <div>
-        <div>Recipe {title}</div>
-        <ul>
-          {ingredients}
-        </ul>
-        <p>{instructions}</p>
-        <img src={img} alt={title} />
+      <div className="recipe-card">
+
+        <div className="recipe-card-image">
+          <img src={img} alt={title} />
+        </div>
+        <div className="recipe-card-content">
+          <h3 className="recipe-title">Recipe {title}</h3>
+          <h4>Ingredients</h4>
+          <ul>
+            {ingredients}
+          </ul>
+          <h4>Instructions:</h4>
+          <p>{instructions}</p>
+        </div>
+
       </div>
     );
   }
