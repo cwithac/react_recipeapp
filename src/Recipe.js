@@ -3,7 +3,7 @@ import './Recipe.css';
 
 class Recipe extends Component {
   render() {
-    const {title} = this.props;
+    const {title, img, instructions} = this.props;
     const ingredients = this.props.ingredients.map((ing, index) => (<li key={index}>{ing}</li>))
     return (
       <div>
@@ -11,6 +11,8 @@ class Recipe extends Component {
         <ul>
           {ingredients}
         </ul>
+        <p>{instructions}</p>
+        <img src={img} alt={title} />
       </div>
     );
   }
