@@ -10,7 +10,7 @@ class RecipeList extends Component {
         title: "Spaghetti",
         instructions: "Open jar of Spaghetti sauce.  Bring to simmer.  Boil water.  Cook pasta until done.  Combine pasta and sauce",
         ingredients: ["pasta", "8 cups water", "1 box spaghetti"],
-        img: "pasta.jpg"
+        img: "spaghetti.jpg"
       },
       {
         title: "Milkshake",
