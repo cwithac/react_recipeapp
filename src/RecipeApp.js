@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import RecipeList from './RecipeList';
+import RecipeInput from './RecipeInput';
 import './RecipeApp.css';
 
 class RecipeApp extends Component {
@@ -30,13 +31,14 @@ class RecipeApp extends Component {
           img: "avocado_toast.jpg"
         }
       ],
-      nextRecipeId: 4, 
+      nextRecipeId: 4,
     }
   }
   render() {
     return (
       <div className="App">
         <Navbar/>
+        <RecipeInput />
         <RecipeList recipes={this.state.recipes}/>
       </div>
     );
