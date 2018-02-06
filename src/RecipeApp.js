@@ -42,7 +42,8 @@ class RecipeApp extends Component {
       const newRecipe = {...recipe, id: this.state.nextRecipeId};
       return {
         nextRecipeId: prevState.nextRecipeId + 1,
-        recipes: [...this.state.recipes, newRecipe]
+        recipes: [...this.state.recipes, newRecipe],
+        showForm: false
       }
     });
   }
